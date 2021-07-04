@@ -37,8 +37,8 @@ export default {
   // check login thì mới hiển thị progress
   computed: {
     ...mapGetters(["progress"]),
-    ...mapState(['isAuthenticated'])
-  }
+    ...mapState(["isAuthenticated"]),
+  },
 };
 </script>
 

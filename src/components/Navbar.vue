@@ -2,8 +2,12 @@
   <div class="header">
     <h1>Vuex Todos App</h1>
     <ul>
-      <li>Home</li>
-      <li>About</li>
+      <li>
+        <router-link to="/">Home</router-link>
+      </li>
+      <li>
+        <router-link to="/about">About</router-link>
+      </li>
       <li v-if="authenticated">
         Total todo: <span class="text-danger">{{ totalTodo }}</span>
         <button class="btn btn-sm btn-danger ml-5" @click="TOGGLE_AUTH">
@@ -16,6 +20,7 @@
         </button>
       </li>
     </ul>
+    <router-view></router-view>
   </div>
 </template>
 
